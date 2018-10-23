@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+
+body {background-color: rgb(19, 242, 208)};
+
+
+span {display:block; height:60px; padding-left:210px; margin-top:-22px;}
+</style>
+
+<title>Login Page</title>
+<script src='https://www.google.com/recaptcha/api.js'></script> 
+</head>
+<body>
+	<center>
+	<link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+	<h1 style="font-size:300%;font-family:Amita">Fabflix</h1>
+	<form id="login_form" method="post" action="#">
+		<div class="container">
+           
+			<select id="accountselect" name="account">
+    				<option value="user">User</option>
+    				<option value="employee" >Employee</option>
+  			</select>
+            <br/>
+            <br/>
+      		<label for="uname"><b>Username: </b></label><span>
+      		<input id="username" type="text" placeholder="Enter Username" name="username" /></span>
+      		<br/>
+      		<label for="psw"><b>Password:  </b></label><span>
+      		<input id="password" type="password" placeholder="Enter Password" name="password" /></span>
+      		<br/>
+            <br/>
+       		<div class="g-recaptcha" data-sitekey="6LfjTVkUAAAAAJOzGUWhPQU_rSN1TtMSgcqka1Vt"></div>
+      		<br/>
+      		<button type="submit">Login</button>
+    		</div>
+	</form>
+	<h6 style = "position:absolute;bottom:0px; right:0px">Copyright © 2018 CS122B Team-08. All rights reserved.</h6>
+	<div id="login_error_message"></div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./login.js"></script>
+  	<script src='https://www.google.com/recaptcha/api.js'></script> 
+    </center>
+</body>
+</html>
