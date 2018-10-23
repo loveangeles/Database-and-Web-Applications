@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Amita;
+    src: url(https://fonts.googleapis.com/css?family=Amita);
+}
+
+body {
+    background-color: rgb(19, 242, 208);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    
+	font-family:Amita
+    color: #ccfff2;
+    background-color: rgb(19, 242, 208);
+    width:95%;
+    font-size: 4.5em;
+    margin: 5px 10px 5px 10px;
+    padding: 10px;
+    padding-left: 20px;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #070707;
+    font-size: 1.4em;
+    margin-left: 5px;
+}
+
+h3 {
+    color: #070707;
+    font-size: 1.25em;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+	color: #73AD21;
+	text-align: center;
+}
+
+form {
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+    padding-left: 10px;
+	background-color: rgb(19, 242, 208);
+	border-radius: 4px;
+}
+
+input[type=text], input[type=password] {
+    width: 200px;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    background-color: #EC1E1E;
+    border: none;
+    color: white;
+    padding: 10px 54px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 4px 100px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #3e8e41
+}
+a {
+	color: #ff533d;
+}
+
+input[type=submit]:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(1px);
+}
+table {
+	color: #e9c89c;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: rgba(130, 128, 129, 0.5);
+	border-radius: 4px;
+	border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #163728;
+}
+
+tr:hover {
+	background-color: rgb(87, 188, 144, 0.2);
+}
+
+.inline-box {
+    margin-top: 30px;
+	display: inline-block;
+	width: 45%;
+	border: 3px solid rgb(19, 242, 208);
+	vertical-align: top
+}
+
+.normal-box {
+	margin-top: 10px;
+	width: 100%;
+	height: 50px;
+    border: 3px solid rgb(19, 242, 208); 
+}
+

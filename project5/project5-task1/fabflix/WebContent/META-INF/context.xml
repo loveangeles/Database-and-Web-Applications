@@ -1,0 +1,37 @@
+<Context path="/TomcatTest">
+	<Resource name="jdbc/moviedb"
+              auth="Container"
+              driverClassName="com.mysql.jdbc.Driver"
+              type="javax.sql.DataSource"
+              username="root"
+              password="team8"
+              url="jdbc:mysql://localhost:3306/moviedb"/>
+
+
+    <Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource"
+              maxTotal="100" maxIdle="30" maxWaitMillis="10000" username="mytestuser"
+              password="mypassword" driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/moviedb?autoReconnect=true&amp;useSSL=false"/>
+              
+	<Resource name="jdbc/write" 
+	auth="Container" type="javax.sql.DataSource"
+		maxTotal="100" 
+		maxIdle="30" 
+		maxWaitMillis="10000" 
+		username="root"
+		password="team8" 
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://18.188.57.177:3306/moviedb?autoReconnect=true&amp;useSSL=false&amp;cachePrepStmts=true" />
+		
+	<Resource name="jdbc/moviedb" 
+	auth="Container" 
+	type="javax.sql.DataSource"
+		maxTotal="100" 
+		maxIdle="30" 
+		maxWaitMillis="10000" 
+		username="root"
+		password="team8" 
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/moviedb?autoReconnect=true&amp;useSSL=false&amp;cachePrepStmts=true" />
+
+</Context>
